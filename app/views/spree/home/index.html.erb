@@ -7,7 +7,7 @@
     <h1>
       欢迎来到 80配 汽配商城!
       <br>
-      Choose <a href="/products">anything</a> you wish, we’ll ship it <a href="/shipping">anywhere!</a>
+      选购 <a href="/products">商品</a>, 送货<a href="/shipping">上门!</a>
     </h1>
   </div>
 </div>
@@ -15,7 +15,7 @@
 <div class="container">
   <% if @featured_products %>
     <div id="featured-products" class="row">
-      <h3>汽车喇叭</h3>
+      <h3>推荐配件</h3>
       <hr>
       <ul class="carousel">
         <% @featured_products.each do |product| %>
@@ -27,7 +27,7 @@
 
   <% if @latest_products %>
     <div id="latest-products" class="row">
-      <h3>车灯</h3>
+      <h3>最新上架</h3>
       <hr>
       <ul class="carousel">
         <% @latest_products.each do |product| %>
