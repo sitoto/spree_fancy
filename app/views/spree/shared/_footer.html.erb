@@ -1,52 +1,6 @@
 ﻿<footer id="footer" class="sixteen columns" data-hook>
-  <div class="container">
-    
-    <div class="four columns">
-      <%= image_tag "store/logo-white.png", :alt => "80配汽配商城", :id => "footer-logo" %>
-      <br>
-      <br>
-      <div class="phone">
-        <a href="callto:020">020-88888888</a>
-        </div>
-      <br>
-      <div class="email">
-        <a href="mailto:fuwu@80pei.com">fuwu@80pei.com</a>
-      </div>
-      <br>
-      <div class="address">
-        80配 汽配商城
-        <br>
-        湖北武汉
-      </div>
-    </div>
-    
-    <div class="four columns">
-      <h5>网站服务</h5>
-      <ul>
-        <li><a href="/products">最新产品</a></li>
-        <li><a href="/products">热卖产品</a></li>
-        <li><a href="/products">品牌专供</a></li>
-        <li><a href="/products">线下合作</a></li>
-      </ul>
-    </div>
-    
-    <div class="four columns">
-      <h5>帮助中心</h5>
-      <ul>
-        <li><a href="/porder.html">预订配件</a></li>
-        <li><a href="/shipping.html">配送详情</a></li>
-        <li><a href="/process.html">购物流程</a></li>
-      </ul>
-    </div>
-    
-    <div class="four columns">
-      <h5>关于80配商城</h5>
-      <ul>
-        <li><a href="/aboutus.html">关于我们</a></li>
-        <li><a href="/faq.html">常见问题</a></li>
-        <li><a href="/termsofservice.html">服务条款</a></li>
-      </ul>
-    </div>
-    
+  <div id="footer-left" class="columns alpha eight" data-hook>
+    <p><%= t :powered_by  %> <%= link_to '帮你配 汽配商城', 'http://www.80pei.com/' %></p>
   </div>
+  <div id="footer-right" class="columns omega eight" data-hook></div>
 </footer>
