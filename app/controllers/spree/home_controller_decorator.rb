@@ -1,14 +1,14 @@
 Spree::HomeController.class_eval do
 
   def index
-    slider = Spree::Taxon.where(:name => 'Slider').first
-    @slider_products = slider.products.active if slider
+    home_new = Spree::Taxon.where(:name => t('home_new')).first
+    @slider_products = home_new.products.active if home_new
 
-    featured = Spree::Taxon.where(:name => 'Featured').first
-    @featured_products = featured.products.active if featured
+    home_hot = Spree::Taxon.where(:name => t('home_hot')).first
+    @featured_products = home_hot.products.active if home_hot
 
-    latest = Spree::Taxon.where(:name => 'Latest').first
-    @latest_products = latest.products.active if latest
+    home_fav = Spree::Taxon.where(:name => t('home_fav')).first
+    @latest_products = home_fav.products.active if home_fav
   end
 
 end
