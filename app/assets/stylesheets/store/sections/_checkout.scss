@@ -36,16 +36,21 @@
 
 #checkout {
   p.field {
-    label {
-	  width: 120px;
-	  text-align: right;
-	  color: #666;
-	  margin-right: 15px;
-      em {
+    span{
+		width: 20px;
 	    margin-right: 5px;
         color: #f60;
         font-family: sans-serif;
-
+		display: block;
+		float: left;
+	}
+    label {
+		width: 120px;
+		text-align: right;
+		color: #666;
+		margin-right: 15px;
+		display: block;
+		float: left;
       }
 	}
   }
