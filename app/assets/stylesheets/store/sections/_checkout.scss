@@ -41,14 +41,15 @@
 	  text-align: right;
 	  color: #666;
 	  margin-right: 15px;
-	}
-	span.required {
-	  margin-right: 5px;
-      color: #f60;
-      font-family: sans-serif;
+      em {
+	    margin-right: 5px;
+        color: #f60;
+        font-family: sans-serif;
 
-    }
+      }
+	}
   }
+  
 }
 
 #shipping_method {

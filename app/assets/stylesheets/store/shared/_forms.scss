@@ -7,7 +7,7 @@ textarea {
   @include border-radius(20px);
   @include box-shadow(none);
   @include transition-duration(0.3s);
-  border-width: 3px;
+  border-width: 2px;
   padding: 7px 20px;
   text-transform: uppercase;
 
@@ -25,7 +25,7 @@ select {
 
 #billing, #shipping {
   select {
-    width: 93%;
+    width: 300px;
   }  
 }
 
@@ -33,8 +33,10 @@ input[type="number"],
 input[type="text"], input[type="email"],
 input[type="password"], input[type="tel"],
 input[type="search"], textarea {
-  @include border-radius(8px);
+  @include border-radius(2px);
   text-transform: none;
+  border-width: 1px;
+  border-color: #ddd;
   color: $body_text_color;
 
   &:hover {
