@@ -43,6 +43,7 @@
 		span.label{
 			width: 105px;
 			margin-right: 5px;
+			margin-left: 0;
 			float: left;
 			text-align: right;
 			
@@ -57,9 +58,9 @@
 		}    
 		label {
 			text-align: right;
-			margin-right: 15px;
-			display: block;
-			float: left;
+			margin-right: 0;
+			margin-left: 15px;
+			display: inline;
       }
 	}
 
