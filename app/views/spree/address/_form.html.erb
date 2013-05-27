@@ -103,6 +103,7 @@
 	</div>
   </div>
   <div class="list" id=<%="#{address_id}phone" %>>
+    <span class="label">
       <span class="required">*</span><%= form.label :phone, t(:phone) %>
 	</span>
 	<div class="field">
@@ -110,6 +111,7 @@
   </div>
   <% if Spree::Config[:alternative_shipping_phone] %>
     <div class="list"  id=<%="#{address_id}altphone" %>>
+	  <span class="label">
         <%= form.label :alternative_phone, t(:alternative_phone) %>
 	  </span>
 	  <div class="field">  
