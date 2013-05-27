@@ -42,21 +42,21 @@
 		
 		span.label{
 			width: 105px;
-			height: 26px;
 			margin-right: 5px;
 			float: left;
-			color: #666;
-			line-height: 26px;
 			text-align: right;
+			
+			label{
+				text-align: left;
+				display: inline;
+				float: none;
+			}
 		}
 		div.field {
-			height: 26px;
 			float: left;
-			line-height: 26px;
 		}    
 		label {
 			text-align: right;
-			color: #666;
 			margin-right: 15px;
 			display: block;
 			float: left;
