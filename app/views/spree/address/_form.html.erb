@@ -8,7 +8,7 @@
   <div class="list" id=<%="#{address_id}firstname" %>>
     <span class="label">
 		<span class="required">*</span>
-		<%= form.label :firstname, t(:firstname) %>
+		<%= form.label :firstname, Spree.t(:firstname) %>
 	</span>
 	<div class="field">
 	  <%= form.text_field :firstname, :class => 'required' %>
@@ -96,7 +96,7 @@
 
   <div class="list"   id=<%="#{address_id}zipcode" %>>
     <span class="label">
-      <span class="required">*</span><%= form.label :zipcode, t(:zipcode) %>
+      <span class="required">*</span><%= form.label :zipcode, Spree.t(:zipcode) %>
 	</span>
 	<div class="field">  
       <%= form.text_field :zipcode, :class => 'required' %>
