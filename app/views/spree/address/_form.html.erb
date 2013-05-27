@@ -1,14 +1,14 @@
 ﻿<% address_id = address_type.chars.first %>
 <div class="inner" data-hook=<%="#{address_type}_inner" %>>
   <p class="field" id=<%="#{address_id}lastname" %> style=" display: none; width: 0; height: 0; ">
-    <span class="required">*</span><%= form.label :lastname, t(:last_name) %>
+    <span class="required">*</span><%= form.label :lastname, t(:lastname) %>
     <%= form.text_field :lastname, :class => 'required' , :value => '( )'%>
   </p> 
   
   <div class="list" id=<%="#{address_id}firstname" %>>
     <span class="label">
 		<span class="required">*</span>
-		<%= form.label :firstname, t(:first_name) %>
+		<%= form.label :firstname, t(:firstname) %>
 	</span>
 	<div class="field">
 	  <%= form.text_field :firstname, :class => 'required' %>
@@ -96,7 +96,7 @@
 
   <div class="list"   id=<%="#{address_id}zipcode" %>>
     <span class="label">
-      <span class="required">*</span><%= form.label :zipcode, t(:zip) %>
+      <span class="required">*</span><%= form.label :zipcode, t(:zipcode) %>
 	</span>
 	<div class="field">  
       <%= form.text_field :zipcode, :class => 'required' %>
