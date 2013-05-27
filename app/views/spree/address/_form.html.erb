@@ -4,9 +4,16 @@
     <span class="required">*</span><%= form.label :lastname, t(:last_name) %>
     <%= form.text_field :lastname, :class => 'required' , :value => '( )'%>
   </p> 
-  <p class="field" id=<%="#{address_id}firstname" %>>
-    <span class="required">*</span><%= form.label :firstname, t(:first_name) %><%= form.text_field :firstname, :class => 'required' %>
-  </p>
+  
+  <div class="list" id=<%="#{address_id}firstname" %>>
+    <span class="label">
+		<span class="required">*</span>
+		<%= form.label :firstname, t(:first_name) %>
+	</span>
+	<div class="field">
+	  <%= form.text_field :firstname, :class => 'required' %>
+	</div>
+  </div>
 
   <% if Spree::Config[:company] %>
     <p class="field" id=<%="#{address_id}company" %>>

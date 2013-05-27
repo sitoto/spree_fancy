@@ -35,25 +35,37 @@
 }
 
 #checkout {
-  p.field {
-    span{
-		width: 20px;
-	    margin-right: 5px;
-        color: #f60;
-        font-family: sans-serif;
-		display: block;
-		float: left;
-	}
-    label {
-		width: 120px;
-		text-align: right;
-		color: #666;
-		margin-right: 15px;
-		display: block;
-		float: left;
+	div.list {
+		padding: 5px 0;
+		overflow: hidden;
+		zoom: 1;
+		
+		span.label{
+			width: 105px;
+			height: 26px;
+			margin-right: 5px;
+			float: left;
+			color: #666;
+			line-height: 26px;
+			text-align: right;
+		}
+		div.field {
+			height: 26px;
+			float: left;
+			line-height: 26px;
+		}    
+		label {
+			text-align: right;
+			color: #666;
+			margin-right: 15px;
+			display: block;
+			float: left;
       }
 	}
-  
+
+
+
+ 
   
 }
 
